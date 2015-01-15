@@ -1,6 +1,8 @@
 # ruby-collectd
 
-`ruby-collectd` lets you send statistics to [**collectd**](https://github.com/collectd/collectd) from Ruby, by talking to the collectd network protocol, and sending stats periodicially to a network-aware instance of collectd.
+[![Gem Version](https://badge.fury.io/rb/collectd.svg)](http://badge.fury.io/rb/collectd)
+
+Allows you to send metrics to [**collectd**](https://github.com/collectd/collectd) from Ruby, by talking to the collectd network protocol, and sending stats periodicially to a network-aware instance of collectd.
 
 ## Installation
 
