@@ -1,4 +1,4 @@
-# ruby-collectd
+# collectd
 
 [![Gem Version](https://badge.fury.io/rb/collectd.svg)](http://badge.fury.io/rb/collectd)
 
