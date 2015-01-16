@@ -209,7 +209,7 @@ module Collectd
         @gauges = {}
 
         # And return serialized packet of parts
-        pkt.to_s
+        pkt.join
       end
     end
 
