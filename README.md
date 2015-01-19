@@ -94,20 +94,8 @@ Stats.counter(:seconds_elapsed).polled_counter do
 end
 ```
 
-Glossary / collectd's data model
---------------------------------
+Test Application
+--------------------
 
-`collectd` groups data by **six categories:**
-
-* *hostname* is grabbed from ``hostname -f``
-* *plugin* is the application's name
-* *plugin-instance* is passed from the programs' side with the programs instance identifier, useful if you're running the same script twice (PIDs are quite too random)
-* *type* is the kind of data you are measuring and must be defined in types.db for collectd to understand
-* *type-instance* provides further distinction and have no relation to other type-instances. Multiple type-instances are only rendered into one graph by collection3 if defined with module GenericStacked.
-* *values* are one or more field names and types belonging together. The exact amount of fields and their corresponding names (useful to collection3) are specified in collectd's types.db.
-
-A value can be either of **two types:**
-
-* *COUNTER* is for increasing counters where you want to plot the delta. Network interface traffic counters are a good example.
-* *GAUGE* is values that go up and down to be plotted as-is, like a temperature graph.
+To test if you're Ruby application is successfully sending metrics to CollectD, please use the [revett/collectd-carbon](https://github.com/revett/collectd-docker) Docker image (setup instructions in README).
 
