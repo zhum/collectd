@@ -97,5 +97,5 @@ end
 Test Application
 --------------------
 
-To test if you're Ruby application is successfully sending metrics to CollectD, please use the [revett/collectd-carbon](https://github.com/revett/collectd-docker) Docker image (setup instructions in README).
+To test if your Ruby application is successfully sending metrics to CollectD, please use the [revett/collectd-carbon](https://github.com/revett/collectd-docker) Docker image (setup instructions in README).
 
